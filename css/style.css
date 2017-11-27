@@ -1,0 +1,146 @@
+body,html{
+    margin:0;
+    padding:0;
+    font-family: helvetica;
+}
+
+body{
+    width: 90%;
+    margin: auto;
+    padding:2em 0;
+}
+
+.caracter{
+    padding:10px;
+    border-radius: 4px;
+}
+
+.logo{
+    max-width: 380px;
+    grid-area: header;  
+}
+
+.Beemo{
+    background: #BAE0CD;
+    grid-area: c;
+}
+
+.Finn{
+    background:#00ADE3;
+    grid-area: a;  
+}
+
+.Jack{
+    background:#FCB823;
+    grid-area: b;    
+}
+
+.Marceline{
+    background: #EEF1F3;
+    grid-area: d;   
+}
+
+.miss-rainicorn{
+    background: #E0ABCE;
+    grid-area: f; 
+}
+
+.princesse-chewingum{
+    background: #E7CEE3;
+    grid-area: g;   
+}
+
+.princesse-des-flammes {
+    background: #FFA300;
+    grid-area: h;   
+} 
+
+.princesse-lumpy-space{
+    background: #BB9DC8;
+    grid-area: e;   
+} 
+
+.roi-des-glaces{
+    background: #A3D8F5;
+    grid-area: i;   
+}
+
+.caracters{
+    display: grid;
+    grid-gap: 1em;
+}
+
+.row>div{
+    display: flex;
+    flex-flow:row;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.row>div img{
+    width:40%;
+}
+
+.row>div p{
+    width:60%;
+}
+
+@media screen and (min-width:360px){
+    .caracters{
+        grid-template-areas: 
+            "header"
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g"
+            "h"
+            "i";
+    } 
+}
+
+@media screen and (min-width:768px){
+    .caracters{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+            "header header"
+            "a a"
+            "b b"
+            "c d"
+            "e f"
+            "g h"
+            "i i";
+    }  
+}
+
+@media screen and (min-width:1024px){
+    .caracters{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas: 
+            "header header header"
+            "a b c"
+            "d e f"
+            "g h i";
+    }  
+}
+
+
+@media screen and (min-width:1280px){
+    .caracters{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: 
+            "header header header header"
+            "a a b b"
+            "c d e f"
+            "g h i i";
+    }  
+}
+
+
+
+
+
+
+
