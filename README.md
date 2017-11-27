@@ -1,2 +1,2 @@
 # grid
-utilisation des grid l'atout pour aventure time
+utilisation des grid layout pour aventure times.
